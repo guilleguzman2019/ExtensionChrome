@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Extension Likedin</title>
+</head>
+<body>
+    <div class="container" style="width:409px; background-image: url('http://68.media.tumblr.com/ce6848c018e327159dd94a3272fc403f/tumblr_olv7c9olP21uaqtxco1_540.gif'); background-repeat: no-repeat; background-size: cover;">
+        <nav class="navbar navbar-light bg-light" style="background-color: #f8f9fab8!important;">
+            <a class="navbar-brand">
+                <img src="https://it-talent.cl/wp/wp-content/uploads/2020/08/logo-it-300x108.png" width="150" height="80" class="d-inline-block align-top" alt="">
+            </a>
+            <form class="form-inline">
+              <button style="display: none;" id="logout" class="btn btn-outline-danger my-2 my-sm-0" type="submit">logout</button>
+            </form>
+          </nav>
+
+        <br>
+
+        <div id="credenciales">
+            <form action="">
+                <div class="form-group row">
+                    <label style="color:aliceblue;" for="staticEmail" class="col-sm-2 col-form-label">Usuario Wordpress</label>
+                    <div class="col-sm-10">
+                    <input type="text"  class="form-control" id="userwp" >
+                    </div>
+                </div>
+        
+                <div class="form-group row">
+                    <label style="color:aliceblue;" for="inputPassword" class="col-sm-2 col-form-label">Pass Wordpress</label>
+                    <div class="col-sm-10">
+                    <input type="password" class="form-control" id="passwp" >
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input class="btn btn-primary" id="sendCred" type="button" value="enviar">
+                    </div>
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <div id="postulacion" style="display: none;">
+            <br>
+    
+            <select class="form-control" id="recl">
+                <option>Elige a un reclutador</option>
+            </select>
+    
+            <br>
+
+            <select class="form-control" id="ofertas">
+                <option>Elige la oferta</option>
+            </select>
+
+            <br>
+
+            <select class="form-control" id="categoriacv">
+                <option>Elige la categoria del cv</option>
+            </select>
+
+            <BR>
+
+            <div class="form-group row">
+                <div class="form-row align-items-center">
+                    <button id="boton" type="submit" class="btn btn-primary" style="margin-left: 22px;">Enviar</button>
+                </div>
+            </div>
+            <br>
+
+            <div id="datosPersonales">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
